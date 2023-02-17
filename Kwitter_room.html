@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Kwitter</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.2/firebase.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Kwitter.css">
+<script src="Kwitter.js"></script>
+    </head>
+    <body onload="myFunction()">
+        <center>
+        <div>
+            <button class="btn btn-warning lo" id="logout_button" onclick="home()"><i class="fa fa-sign-out">Logout</i></button>
+        </div>
+        <div id="firstdiv">
+            <h3 id="welcome"></h3>
+        </div>
+        <div id="firstdiv15">
+            <div>
+                
+                <h3 id="welcome">
+                    Add your room name below
+                    <i class="fa fa-arrow-down"></i>
+                </h3>
+            </div>
+        
+            <div>
+                <input placeholder="Room Name" class="form-control input" id="input">
+            </div>
+
+            <div id="padder">
+                <button class="btn btn-info" id="addroom_btn" onclick="addroom()">#AddRoom</button>
+            </div>
+            
+                
+        </div>
+        <br>
+            <br>
+        <div id="output">
+                
+        </div>
+        </center>
+    </body>
+</html>
